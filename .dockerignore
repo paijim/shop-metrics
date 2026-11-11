@@ -1,0 +1,16 @@
+# Ne pas copier node_modules (Docker installera les dépendances proprement dans le conteneur)
+**/node_modules
+**/*.log
+
+# Ne pas copier le dossier Git et ses fichiers de configuration
+.git
+.gitignore
+.dockerignore
+README.md
+
+# Ne pas copier les dossiers de build locaux
+**/build
+**/dist
+
+# Ne pas copier les secrets locaux
+.env
